@@ -1,0 +1,26 @@
+/* HTML: */
+body{
+    background-color: rgb(150, 222, 255);
+}
+
+/* Classes: */
+.container{
+    margin: 20px;
+    padding: 5px;
+}
+
+.button{
+    border: 1px solid blue;
+    padding: 3px;
+}
+
+.button.red{
+    border-color: red;
+    color: red;
+}
+
+/* IDs: */
+#cc{
+    text-align: center;
+    font-size: .75em;
+}

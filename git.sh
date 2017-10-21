@@ -7,6 +7,7 @@ git pull
 git add README.md
 git add git.sh
 git add EnergonInc
+git add LearnedData
 
 # Commit changes and upload to the master branch
 git commit -m "Update" 
