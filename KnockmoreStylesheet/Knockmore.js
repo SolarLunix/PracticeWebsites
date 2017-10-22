@@ -1,0 +1,1 @@
+$('.middle-seperation > tr').not(':last').addClass('edge');

@@ -1,0 +1,39 @@
+body{
+    font: 1em "Times New Roman", serif;
+}
+
+button, .button{
+    font: 1em "Times New Roman", serif;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 7px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+.centered{
+    margin: 0 auto;
+}
+
+.middleseperation.edge{
+    border-right: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td{
+    padding: 3px;
+}
+
+th{
+    border-bottom: 2px solid black;
+    padding: 3px;
+}

@@ -1,22 +1,70 @@
 /* HTML: */
 body{
-    background-color: rgb(150, 222, 255);
+    background-color: rgba(150, 222, 255, .25);
 }
 
-/* Classes: */
-.container{
-    margin: 20px;
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 3px;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th{
+    border-bottom: 1px solid black;
+}
+
+td{
     padding: 5px;
 }
 
+/* Classes: */
 .button{
-    border: 1px solid blue;
+    border-radius: 5px;
+    border: 2px solid blue;
+    color: blue;
+    background-color: white;
     padding: 3px;
 }
 
 .button.red{
     border-color: red;
     color: red;
+}
+
+.caps{
+    text-transform: uppercase;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.centertext{
+    text-align: center;
+}
+
+.container{
+    margin: 20px;
+    padding: 5px;
+}
+
+.section{
+    border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.sides{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 /* IDs: */

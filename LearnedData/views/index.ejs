@@ -2,40 +2,78 @@
 
 <h1>Learned Items:</h1>
 
-<div id="html-stuff" class="container">
+<div id="html-stuff" class="container section">
     <h2>HTML Items:</h2>
-    <table>
-        <td>
-            <th>HTML</th>
-            <th>Function</th>
-        </td>
-        
-    </table>
-    <a href="new_html" class="button">Add HTML</a>
+    <% if(htmlList != "empty" && htmlList[0]){ %>
+        <table class="center">
+            <tr>
+                <th>HTML Code</th>
+                <th class="sides">Function</th>
+                <th>Delete</th>
+            </tr>
+            <% htmlList.forEach(function(item){ %>
+                <tr>
+                    <td><%= item.code %></td>
+                    <td class="sides"><%= item.desc %></td>
+                    <td><a href="del_html<%=item._id%>" class="button red">Delete</a></td>
+                </tr>
+            <% }); %>
+            
+        </table>
+        <div><a href="new_html" class="button center">Add HTML</a></div>
+    <% }else{ %>
+        <div class="centertext">Empty List.</div>
+        <div><a href="new_html" class="button center">Add HTML</a></div>
+    <% }; %>
 </div>
 
-<div id="css-stuff" class="container">
+<div id="css-stuff" class="container section">
     <h2>CSS Items:</h2>
-    <table>
-        <td>
-            <th>CSS</th>
-            <th>Function</th>
-        </td>
-        
-    </table>
-    <a href="new_css" class="button red">Add CSS</a>
+    <% if(cssList != "empty" && cssList[0]){ %>
+        <table class="center">
+            <tr>
+                <th>CSS Code</th>
+                <th>Function</th>
+                <th>Delete</th>
+            </tr>
+            <% cssList.forEach(function(item){ %>
+                <tr>
+                    <td><%= item.code %></td>
+                    <td><%= item.desc %></td>
+                    <td><a html="del_css<%=item._id%>" class="button red">Delete</a></td>
+                </tr>
+            <% }); %>
+            
+        </table>
+        <div><a href="new_css" class="button center">Add CSS</a></div>
+    <% }else{ %>
+        <div class="centertext">Empty List.</div>
+        <div><a href="new_css" class="button center">Add CSS</a></div>
+    <% }; %>
 </div>
 
-<div id="mongoose-stuff" class="container">
+<div id="mongoose-stuff" class="container section">
     <h2>Mongoose Items:</h2>
-    <table>
-        <td>
-            <th>Mongoose Code</th>
-            <th>Function</th>
-        </td>
-        
-    </table>
-    <a href="new_mongoose">Add CSS</a>
+    <% if(mongooseList != "empty" && mongooseList[0]){ %>
+        <table class="center">
+            <tr>
+                <th>Mongoose Code</th>
+                <th>Function</th>
+                <th>Delete</th>
+            </tr>
+            <% mongooseList.forEach(function(item){ %>
+                <tr>
+                    <td><%= item.code %></td>
+                    <td><%= item.desc %></td>
+                    <td><a html="del_mongoose<%=item._id%>" class="button red">Delete</a></td>
+                </tr>
+            <% }); %>
+        </table>
+        <div><a href="new_mongoose" class="button center">Add Mongoose</a></div>
+    <% }else{ %>
+        <div class="centertext">Empty List.</div>
+        <div><a href="new_mongoose" class="button center">Add Mongoose</a></div>
+    <% }; %>
 </div>
 
 <% include partials/footer %>

@@ -1,5 +1,16 @@
 <% include partials/header %>
 
-<%= type %>
+<h1 class="caps">New <%= type %></h1>
+<form class="" action="/<%= type %>" method="POST">
+    <div>
+        <input name="item[code]" type="text" placeholder="Code"></input>
+    </div>
+    <div>
+        <textarea name="item[desc]" placeholder="Description"></textarea>
+    </div>
+    <div>
+        <input class="button" type="submit">
+    </div>
+</form>
 
 <% include partials/footer %>
