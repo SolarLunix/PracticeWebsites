@@ -1,1 +1,1 @@
-$('.middle-seperation > tr').not(':last').addClass('edge');
+$("table.middleseperation th:not(:last-child), table.middleseperation td:not(:last-child)").addClass("middleseperationedge");
