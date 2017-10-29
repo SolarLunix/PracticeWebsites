@@ -20,20 +20,34 @@ button, .button{
     margin: 0 auto;
 }
 
-.middleseperationedge{
-    border-right: 1px solid black;
-}
-
-table{
+table, table.centered{
     border-collapse: collapse;
     border-spacing: 0;
+    margin: 10px auto;
 }
 
 td{
     padding: 3px;
+    border: 1px solid black;
 }
 
 th{
+    border: 1px solid black;
     border-bottom: 2px solid black;
     padding: 3px;
+}
+
+table.middleseperation td{
+    border: none;
+}
+
+table.middleseperation th{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black
+}
+
+table.middleseperation td.middleseperationedge, table.middleseperation th.middleseperationedge{
+    border-right: 1px solid black;
 }
