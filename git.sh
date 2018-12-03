@@ -10,6 +10,7 @@ git add EnergonInc
 git add LearnedData
 git add KnockmoreStylesheet
 git add ValtTec
+git add QuaySideGrill
 
 # Commit changes and upload to the master branch
 git commit -m "Update" 
